@@ -61,14 +61,15 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (var i = 0; i < array.length; i++) {
-    if (array[i] === elemento) {
+  for(var i = 0 ; i < array.length; i++) {
+    if(array[i] === elemento){
       return true;
-    } else {
+    } 
       return false;
+  
     }
   }
-}
+
 
 function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -178,12 +179,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var acomulador=[]
-  for (let i = 0; i < array,length; i++){
-    if (array[i]>100){
-      acomulador.push(array[i]);
+  var nuevoArray=[];
+  for (let i = 0; i < array.length; i++){
+    if (array[i] > 100){
+      nuevoArray.push(array[i]);
     }
-    return acomulador;
+    return nuevoArray;
+}
 }
 
 // No modificar nada debajo de esta línea, de lo contrario no correrán los test.
